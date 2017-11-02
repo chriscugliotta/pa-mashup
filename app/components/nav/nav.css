@@ -1,0 +1,160 @@
+/* Set all margins and padding to zero, UNLESS WE EXPLICITLY SAY OTHERWISE!
+pa-nav-base * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Fixes a bug where Mozilla assigns 'display: inline' to AngularJS components */
+pa-nav-base {
+    display: block;
+}
+
+/* Menu content container */
+.pa-nav-menu {
+    z-index: 99;
+    position: fixed;
+	top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid rgb(231, 236, 241);
+	transform: translate3d(-240px, 0, 0);
+    transition: transform 0.35s;
+}
+
+/* Top-right nav icon */
+.pa-nav-icon {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Menu scrollable area */
+.pa-nav-scroll-area {
+    padding: 0 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Embedded listbox area */
+.pa-listbox {
+    height: 200px;
+    height: -webkit-calc(100% - 80px);
+    height:    -moz-calc(100% - 80px);
+    height:         calc(100% - 80px);
+}
+
+/* Menu title */
+.pa-nav-menu h3 {
+    line-height: 30px;
+}
+
+/* Menu item */
+.pa-nav-menu ul li a {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+/* Menu item hover */
+.pa-nav-menu ul li a:hover {
+    color: rgb(102, 102, 102);
+}
+
+/* Menu item arrow icon */
+.pa-nav-menu ul li a .pa-nav-arrow {
+    position: absolute;
+    right: -15px;
+    top: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+
+
+
+/* Open */
+.pa-nav-menu.pa-nav-open {
+	transform: translate3d(0, 0, 0);
+}
+
+/* For child menus, hide top-right nav icon */
+.pa-nav-menu .pa-nav-menu .pa-nav-icon {
+    background-color: none;
+    color: transparent;
+}
+
+
+
+
+
+/* Qlik selections
+L for Locked
+S for Selected
+O for Optional
+D for Deselected
+A for Alternative
+X for eXcluded
+XS for eXcluded Selected
+XL for eXcluded Locked
+
+-optional background: rgba(0, 0, 0, 0)
+-optional border-bottom: rgb(221, 221, 221)
+-selected background: rgb(82, 204, 82)
+-selected border-bottom: rgb(186, 235, 186)
+-excluded background: rgb(221, 221, 221)
+-excluded border-bottom: rgb(255, 255, 255)
+
+.q-value {
+    margin: 0 !important;
+    padding: 5px 20px 5px 20px !important;
+}
+.q-value.q-state-o, .q-value.q-state-a {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.q-value.q-state-s, .q-value.q-state-xs {
+    background-color: rgb(82, 204, 82);
+    border-bottom: 1px solid rgb(186, 235, 186);
+}
+.q-value.q-state-x {
+    background-color: rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(255, 255, 255);
+} */
+
+
+
+
+
+/* Tool bar */
+.pa-nav-toolbar {
+    padding: 0px 20px 5px 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    text-align: center;
+}
+
+/* Tool bar button */
+.pa-nav-toolbar button {
+    border: none;
+    padding: 0;
+    width: 30px;
+    background: none;
+    font: inherit;
+}
+
+/* Search bar */
+.pa-nav-search-hide {
+    display: none;
+    visibility: hidden;
+}

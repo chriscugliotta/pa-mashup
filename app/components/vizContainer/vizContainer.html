@@ -1,0 +1,50 @@
+<div class="pa-viz-container">
+    <div class="pa-viz-header clearfix">
+        <div class="pa-viz-header-left">
+            <!--
+            <h3>{{::self.title}}</h3> <small>{{self.subTitle}}</small>
+            -->
+            <span class="pa-viz-title">{{::self.title}}</span>
+            <span class="pa-viz-subtitle">{{self.subTitle}}</span>
+        </div>
+        <div class="pa-viz-header-right">
+        
+            <!-- BEGIN CYCLE BUTTON -->
+            <div class="dropdown" ng-if="::self.cycleGroup != undefined">
+                <a class="pa-viz-btn dropdown-toggle" data-toggle="dropdown" title="Change dimension">
+                    <i class="sli icon-wrench"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right scrollable-menu" ng-click="self.pickDimension($event)">
+                    <li ng-repeat="field in ::self.cycleGroup"><a field-index={{::$index}}>{{::field.label}}</a></li>
+                </ul>
+            </div>
+            <!-- END CYCLE BUTTON -->
+            
+            
+            
+            <!-- BEGIN DOWNLOAD BUTTON -->
+            <div class="dropdown">
+                <a class="pa-viz-btn" data-toggle="dropdown" title="Download">
+                    <i class="sli icon-cloud-download"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right scrollable-menu">
+                    <li><a ng-click="self.download('OOXML')">Excel</a><li>
+                    <li><a ng-click="self.download('CSV_C')">CSV</a><li>
+                </ul>
+            </div>
+            <!-- END DOWNLOAD BUTTON -->
+            
+            
+            
+            <!-- BEGIN EXPAND BUTTON -->
+            <a class="pa-viz-btn" ng-click="self.toggleFullscreen()" title="Expand">
+                <i class="fa fa-expand" ></i>
+            </a>
+            <!-- END EXPAND BUTTON -->
+            
+        </div>
+    </div>
+    <div class="pa-viz-body">
+        <div class="qvobject"></div>
+    </div>
+</div>

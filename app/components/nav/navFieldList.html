@@ -1,0 +1,15 @@
+<h3>Fields</h3>
+<ul>
+    <div ng-repeat="field in ::self.fields">
+        <li>
+            <pa-nav-base
+                component-type="::'fieldValueList'"
+                component-data="::field"
+                nav-parent="::self"
+                nav-root="::self.navBase.navRoot"
+                link-text="::field.label"
+                >
+            </pa-nav-base>
+        </li>
+    </div>
+</ul>

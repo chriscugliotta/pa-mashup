@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <pa-title data="::{
+            title: 'Charts',
+            subTitle: 'chase results, financial impact, and more...'
+        }"></pa-title>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <pa-kpi-container data="::{
+                title: 'Charts Chased',
+                subTitle: 'Progress',
+                icon: 'sli icon-docs',
+                color: 'rgb(92, 155, 209)',
+                measure1: 'Num($(expr_ChartsChased), \'#,##0\')',
+                measure2: '1.00'
+            }"></pa-kpi-container>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <pa-kpi-container data="::{
+                title: 'New HCC\'s Found',
+                subTitle: 'Target',
+                icon: 'sli icon-magnifier',
+                color: 'rgb(243, 106, 90)',
+                measure1: 'Num($(expr_MPCAccepted), \'#,##0\')',
+                measure2: '$(expr_MPCAccepted) / 5000'
+            }"></pa-kpi-container>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <pa-kpi-container data="::{
+                title: 'Risk Score Increase',
+                subTitle: 'Target',
+                icon: 'sli icon-graph',
+                color: 'rgb(42, 180, 192)',
+                measure1: 'Num($(expr_RiskDiff), \'#,##0.000\')',
+                measure2: '$(expr_RiskDiff) / 0.05'
+            }"></pa-kpi-container>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <pa-kpi-container data="::{
+                title: 'Payment Increase',
+                subTitle: 'Target',
+                icon: 'sli icon-chart',
+                color0: 'rgb(136, 119, 169)',
+                color: 'rgb(241, 196, 15)',
+                measure1: 'Num($(expr_TransferDiff) / 1000, \'$#,##0.0k\')',
+                measure2: '$(expr_TransferDiff) / 100000'
+            }"></pa-kpi-container>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <pa-viz-container data="::{
+                qObjectId: 'mFee',
+                height: '400px',
+                title: 'Categories Found',
+                subTitle: 'by Chart Rank'
+            }"></pa-viz-container>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <pa-viz-container data="::{
+                qObjectId: 'djwAP',
+                height: '400px',
+                title: 'Details',
+                subTitle: 'by Provider Specialty',
+                cycleGroup: 'cycle1'
+            }"></pa-viz-container>
+        </div>
+</div>

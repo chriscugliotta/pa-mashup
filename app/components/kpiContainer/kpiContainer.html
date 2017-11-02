@@ -1,0 +1,37 @@
+<div class="pa-kpi-container">
+
+    <!-- BEGIN TOP ROW -->    
+    <div class="pa-kpi-row pa-kpi-spacer">
+        <div class="pa-kpi-row-left">
+            <h1 style="color:{{::self.data.color}}">0</h1>
+            <h2>{{::self.title}}</h2>
+        </div>
+        <div class="pa-kpi-row-right">
+            <i class="{{::self.data.icon}}"></i>
+        </div>
+    </div>
+    <!-- END TOP ROW -->
+    
+    
+    
+    <!-- BEGIN PROGRESS BAR -->
+    <div class="pa-kpi-progress">
+        <div class="pa-kpi-progress-filled" style="background-color:{{::self.data.color}}">
+        </div>
+    </div>
+    <!-- END PROGRESS BAR -->
+    
+    
+    
+    <!-- BEGIN BOTTOM ROW -->
+    <div class="pa-kpi-row">
+        <div class="pa-kpi-row-left">
+            <h3>{{::self.subTitle}}</h3>
+        </div>
+        <div class="pa-kpi-row-right">
+            <h3>75%</h3>
+        </div>
+    </div>
+    <!-- END BOTTOM ROW -->
+    
+</div>

@@ -1,0 +1,139 @@
+/* Set all margins and padding to zero, UNLESS WE EXPLICITLY SAY OTHERWISE!
+pa-viz-container *, .pa-viz-container * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Fixes a bug where Mozilla assigns 'display: inline' to AngularJS components */
+pa-viz-container {
+    display: block;
+}
+
+/* Container */
+.pa-viz-container {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px 15px 20px;
+    border: 1px solid rgb(231, 236, 241);
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    /*background-color: lightblue;*/
+}
+
+/* Header */
+.pa-viz-header {
+    flex: 0 1 auto;
+    padding: 10px 0 5px 0;
+    border-bottom: 1px solid rgb(238, 241, 245);
+    margin-bottom: 10px;
+    /*background-color: lightcoral;*/
+}
+
+/* Body */
+.pa-viz-body {
+    flex: 1 1 auto;
+    /*background-color: lightgray;*/
+}
+
+
+
+
+/* Header left */
+.pa-viz-header-left {
+    float: left;
+}
+
+/* Header right */
+.pa-viz-header-right {
+    float: right;
+}
+
+/* Bootstrap .dropdown <div> has block display, which interrupts icon flow */
+.pa-viz-header-right .dropdown {
+    display: inline-block;
+}
+
+/* Header title */
+.pa-viz-header h3 {
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+}
+
+/* Header sub-title */
+.pa-viz-header small {
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+}
+
+/* Header title (new) */
+.pa-viz-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(47, 53, 59);
+    text-transform: uppercase;
+}
+
+/* Header subtitle (new) */
+.pa-viz-subtitle {
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(158, 172, 180);
+}
+
+
+
+/* Header icons */
+.pa-viz-btn {
+    display: inline-block;
+    height: 27px;
+    width: 27px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 25px;
+    overflow: hidden;
+    color: rgb(102, 102, 102);
+    cursor: pointer;
+    transition: all .3s
+
+}
+.pa-viz-btn:hover {
+    color: rgb(51, 51, 51);
+    background-color: rgb(230, 230, 230);
+    border-color: rgb(173, 173, 173);
+    text-decoration: none;
+}
+.pa-viz-btn:active {
+    color: rgb(51, 51, 51);
+    background-color: rgb(212, 212, 212);
+    border-color: rgb(140, 140, 140);
+}
+.pa-viz-btn i {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+.pa-viz-btn .fa-expand, .pa-viz-btn .fa-compress {
+    color: rgb(160, 160, 160);
+}
+
+
+
+/* Fullscreen */
+.pa-viz-fullscreen {
+    z-index: 1000;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: 100vh;
+    background-color: white;
+}

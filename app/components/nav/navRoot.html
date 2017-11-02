@@ -1,0 +1,22 @@
+<h3>Views</h3>
+<ul>
+    <li ng-repeat="view in ::self.paQlikAppConfig.views">
+        <a href="{{::'#' + view.path}}">{{::view.label}}</a>
+    </li>
+</ul>
+<h3>Options</h3>
+<ul>
+    <li>
+        <pa-nav-base
+            component-type="::'fieldList'"
+            component-data="::undefined"
+            nav-parent="::self"
+            nav-root="::self"
+            link-text="::'Select'"
+            >
+        </pa-nav-base>
+    </li>
+    <li><a href="" ng-click="self.paQlikService.clear()">Clear</a></li>
+    <li><a href="" ng-click="self.paQlikService.back()">Back</a></li>
+    <li><a href="" ng-click="self.paQlikService.forward()">Forward</a></li>
+</ul>

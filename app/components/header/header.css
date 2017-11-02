@@ -1,0 +1,88 @@
+/* Header container */
+.pa-header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    border-bottom: 1px solid rgb(233, 236, 243);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Header left side */
+.pa-header-left {
+    flex: 0 1 auto;
+    min-width: 50px;
+}
+
+/* Header right side */
+/* Width 0 hack is needed for scollbar?  https://stackoverflow.com/questions/14962468/flexbox-and-vertical-scroll-in-a-full-height-app-using-newer-flexbox-api */
+.pa-header-right {
+    flex: 1 1 auto;
+    width: 0; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* Logo */
+.pa-header img {
+    position: relative;
+    left: 60px;
+    top: 9px;
+    filter: grayscale(100%);
+}
+
+/* List */
+.pa-header ul {
+    margin: 0;
+    text-align: right;
+}
+
+/* List item */
+.pa-header ul li {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Selection item */
+.pa-selection {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 8px 8px 0;
+    padding: 4px 8px;
+    border: 1px solid rgb(170, 181, 188);
+}
+
+/* Selection item, left area */
+.pa-selection-left {
+    flex: 1 1 auto;
+    margin-right: 8px;
+}
+
+/* Selection item, right area */
+.pa-selection-right {
+    flex: 1 1 auto;
+}
+
+/* Field name and selected values */
+.pa-selection-left h1, .pa-selection-left small {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    color: rgb(170, 181, 188);
+}
+.pa-selection-left h1 {
+    font-weight: bold;
+}
+
+/* Clear icon */
+.pa-selection-right i {
+    font-weight: 300;
+    line-height: 24px;
+    color: rgb(170, 181, 188);
+    transition: color .3s;
+}
+.pa-selection-right i:hover {
+    color: rgb(102, 102, 102);
+}

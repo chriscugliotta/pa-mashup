@@ -1,0 +1,9 @@
+<div class="pa-selection">
+    <div class="pa-selection-left">
+        <h1>{{self.fieldName}}</h1>
+        <small>{{self.fieldValues}}</small>
+    </div>
+    <div class="pa-selection-right">
+        <i class="sli icon-close" title="Clear" ng-click="self.paQlikService.app.field(self.fieldName).clear()"></i>
+    </div>
+</div>

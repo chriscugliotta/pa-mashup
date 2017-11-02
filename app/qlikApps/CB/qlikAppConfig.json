@@ -1,0 +1,98 @@
+{
+    "app": "CB.qvf",
+    "dependencies": [],
+    "views": [
+        {
+            "path": "/risk",
+            "templateUrl": "app/qlikApps/CB/risk.html",
+            "label": "Risk"
+        },
+        {
+            "path": "/categories",
+            "templateUrl": "app/qlikApps/CB/categories.html",
+            "label": "Categories"
+        }
+    ],
+    "fields": [
+        {
+            "name": "Client",
+            "label": "Client"
+        },
+        {
+            "name": "Member ID",
+            "label": "Member ID"
+        },
+        {
+            "name": "Gender",
+            "label": "Gender"
+        },
+        {
+            "name": "Age Range",
+            "label": "Age"
+        },
+        {
+            "name": "Model",
+            "label": "Model"
+        },
+        {
+            "name": "Plan ID",
+            "label": "Plan ID"
+        },
+        {
+            "name": "Issuer ID",
+            "label": "Issuer ID"
+        },
+        {
+            "name": "State",
+            "label": "State"
+        },
+        {
+            "name": "Market",
+            "label": "Market Type"
+        },
+        {
+            "name": "Metal Level",
+            "label": "Metal Level"
+        },
+        {
+            "name": "Rating Area",
+            "label": "Rating Area"
+        },
+        {
+            "name": "HCC Desc",
+            "label": "HCC"
+        },
+        {
+            "name": "HCC Type",
+            "label": "HCC Type"
+        }
+    ],
+    "fieldGroups": {
+        "nav": [
+            "Gender",
+            "Age Range",
+            "Model",
+            "State",
+            "Market",
+            "Metal Level",
+            "Rating Area",
+            "HCC Desc",
+            "HCC Type"
+        ],
+        "cycle1": [
+            "Gender",
+            "Age Range",
+            "Model",
+            "State",
+            "Market",
+            "Metal Level",
+            "Rating Area",
+            "HCC Desc",
+            "HCC Type",
+            "Member ID",
+            "Plan ID",
+            "Issuer ID",
+            "Client"
+        ]
+    }
+}

@@ -1,0 +1,135 @@
+{
+    "app": "CP.qvf",
+    "dependencies": [
+        "/extensions/pa-mashup/app/qlikApps/CP/view1.js",
+        "/extensions/pa-mashup/app/qlikApps/CP/view2.js",
+        "/extensions/pa-mashup/app/qlikApps/CP/view3.js"
+    ],
+    "views": [
+        {
+            "path": "/view1",
+            "templateUrl": "app/qlikApps/CP/view1.html",
+            "controller": "view1",
+            "label": "View 1"
+        },
+        {
+            "path": "/view2",
+            "templateUrl": "app/qlikApps/CP/view2.html",
+            "controller": "view2",
+            "label": "View 2"
+        },
+        {
+            "path": "/view3",
+            "templateUrl": "app/qlikApps/CP/view3.html",
+            "controller": "view3",
+            "label": "View 3"
+        }
+    ],
+    "fields": [
+        {
+            "name": "Member ID",
+            "label": "Member ID"
+        },
+        {
+            "name": "HIC",
+            "label": "HIC"
+        },
+        {
+            "name": "Contract Number",
+            "label": "Contract Nbr"
+        },
+        {
+            "name": "Gender",
+            "label": "Gender"
+        },
+        {
+            "name": "Birth Date",
+            "label": "Birth Date"
+        },
+        {
+            "name": "Age",
+            "label": "Age"
+        },
+        {
+            "name": "As Of Month",
+            "label": "As Of Month"
+        },
+        {
+            "name": "Eligible Year",
+            "label": "Eligible Year"
+        },
+        {
+            "name": "Encounter Filter",
+            "label": "Encounter Filter"
+        },
+        {
+            "name": "Member Status",
+            "label": "Member Status"
+        },
+        {
+            "name": "Run Type",
+            "label": "Run Type"
+        },
+        {
+            "name": "Is Deceased",
+            "label": "Is Deceased"
+        },
+        {
+            "name": "Is Eligible",
+            "label": "Is Eligible"
+        },
+        {
+            "name": "Is New Enrollee",
+            "label": "Is New Enrollee"
+        },
+        {
+            "name": "Is Stable",
+            "label": "Is Stable"
+        },
+        {
+            "name": "Risk Type",
+            "label": "Risk Type"
+        },
+        {
+            "name": "Risk Type",
+            "label": "Risk Type"
+        },
+        {
+            "name": "RA Factor Type Code",
+            "label": "RA Factor Type Code"
+        }
+    ],
+    "fieldGroups": {
+        "nav": [
+            "Member ID",
+            "HIC",
+            "Contract Number",
+            "RA Factor Type Code",
+            "Member Status"
+        ],
+        "cycle1": [
+            "Member ID",
+            "HIC",
+            "Contract Number",
+            "Gender",
+            "Birth Date",
+            "Age",
+            "As Of Month",
+            "Eligible Year",
+            "Encounter Filter",
+            "Member Status",
+            "Run Type",
+            "Is Deceased",
+            "Is Eligible",
+            "Is New Enrollee",
+            "Is Stable",
+            "Risk Type",
+            "RA Factor Type Code"
+        ],
+        "cycle2": [
+            "Eligible Year",
+            "Month",
+            "Age"
+        ]
+    }
+}

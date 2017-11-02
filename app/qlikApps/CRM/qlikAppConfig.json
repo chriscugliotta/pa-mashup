@@ -1,0 +1,114 @@
+{
+    "app": "CRM meridiap.qvf",
+    "dependencies": [],
+    "views": [
+        {
+            "path": "/chartProjects",
+            "templateUrl": "app/qlikApps/CRM/chartProjects.html",
+            "label": "Chart Projects"
+        },
+        {
+            "path": "/categories",
+            "templateUrl": "app/qlikApps/CRM/categories.html",
+            "label": "Categories"
+        }
+    ],
+    "fields": [
+        {
+            "name": "Payment Year",
+            "label": "Payment Year"
+        },
+        {
+            "name": "Chart Group",
+            "label": "Chart Group"
+        },
+        {
+            "name": "Chart Review ID",
+            "label": "Chart Review ID"
+        },
+        {
+            "name": "Chart Review Status",
+            "label": "Chart Review Status"
+        },
+        {
+            "name": "Chart Retrieval Status",
+            "label": "Chart Retrieval Status"
+        },
+        {
+            "name": "Member ID",
+            "label": "Member ID"
+        },
+        {
+            "name": "Member Name",
+            "label": "Member Name"
+        },
+        {
+            "name": "Gender",
+            "label": "Gender"
+        },
+        {
+            "name": "HIC",
+            "label": "HIC"
+        },
+        {
+            "name": "Contract Number",
+            "label": "Contract Number"
+        },
+        {
+            "name": "Provider ID",
+            "label": "Provider ID"
+        },
+        {
+            "name": "Provider Name",
+            "label": "Provider Name"
+        },
+        {
+            "name": "Provider Specialty",
+            "label": "Provider Specialty"
+        },
+        {
+            "name": "HCC",
+            "label": "HCC"
+        },
+        {
+            "name": "HCC Type",
+            "label": "HCC Type"
+        }
+    ],
+    "fieldGroups": {
+        "nav": [
+            "Payment Year",
+            "Chart Group",
+            "Chart Review ID",
+            "Chart Review Status",
+            "Chart Retrieval Status",
+            "Member ID",
+            "Member Name",
+            "Gender",
+            "HIC",
+            "Contract Number",
+            "Provider ID",
+            "Provider Name",
+            "Provider Specialty",
+            "HCC",
+            "HCC Type"
+        ],
+        "cycle1": [
+            "Payment Year",
+            "Chart Group",
+            "Chart Review ID",
+            "Chart Review Status",
+            "Chart Retrieval Status",
+            "Member ID",
+            "Member Name",
+            "Gender",
+            "HIC",
+            "Contract Number",
+            "Provider ID",
+            "Provider Name",
+            "Provider Specialty",
+            "HCC",
+            "HCC Type"
+        ]
+    }
+}

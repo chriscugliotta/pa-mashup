@@ -1,0 +1,39 @@
+<a href="" ng-if="::self.componentType != 'root'" ng-click="self.toggleMenu()">{{::self.linkText}}
+    <i class="sli icon-arrow-right pa-nav-arrow"></i>
+</a>
+<div class="pa-nav-menu">
+    <i class="sli icon-menu pa-nav-icon" ng-click="self.toggleMenu()"></i>
+    <div class="pa-nav-scroll-area">
+        
+        
+        
+        <!-- Subtype 1:  root -->
+        <pa-nav-root
+            ng-if="::self.componentType == 'root'"
+            nav-base="::self"
+            >
+        </pa-nav-root>
+        
+        
+        
+        <!-- Subtype 2:  fieldList -->
+        <pa-nav-field-list
+            ng-if="::self.componentType == 'fieldList'"
+            nav-base="::self"
+            >
+        </pa-nav-field-list>
+        
+        
+        
+        <!-- Subtype 3:  fieldValueList -->
+        <pa-nav-field-value-list
+            ng-if="::self.componentType == 'fieldValueList'"
+            nav-base="::self"
+            field="::self.componentData"
+            >
+        </pa-nav-field-value-list>
+        
+        
+        
+    </div>
+</div>

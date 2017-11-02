@@ -1,0 +1,82 @@
+/* Fixes a bug where Mozilla assigns 'display: inline' to AngularJS components */
+pa-kpi-container {
+    display: block;
+}
+
+/* Container */
+.pa-kpi-container {
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255)
+}
+
+/* Row */
+.pa-kpi-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Row left */
+.pa-kpi-row-left {
+    flex: 1 1 auto;
+}
+
+/* Row right */
+.pa-kpi-row-right {
+    flex: 0 1 auto;
+}
+
+/* Big number */
+.pa-kpi-container h1 {
+    margin: 0 0 2px 0;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgb(42, 180, 192);
+}
+
+/* Title */
+.pa-kpi-container h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(170, 181, 188);
+    text-transform: uppercase;
+}
+
+/* Subtitle */
+.pa-kpi-container h3 {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(170, 181, 188);
+    text-transform: uppercase;
+}
+
+/* Icon */
+.pa-kpi-row-right i {
+    font-size: 26px;
+    font-weight: normal;
+    color: rgb(203, 212, 224);
+}
+
+/* Progress bar */
+.pa-kpi-progress {
+    margin-bottom: 5px;
+    height: 4px;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+}
+
+/* Progress bar filled */
+.pa-kpi-progress-filled {
+    width: 100%;
+    height: 100%;
+    transform: translate3d(-100%, 0, 0);
+    background-color: rgb(42, 180, 192);
+    transition: transform 0.35s;
+}
+
+/* Row bottom margin */
+.pa-kpi-spacer {
+    margin-bottom: 20px;
+}

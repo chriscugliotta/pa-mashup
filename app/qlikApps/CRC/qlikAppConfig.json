@@ -1,0 +1,155 @@
+{
+    "app": "CRC demo.qvf",
+    "dependencies": [],
+    "views": [
+        {
+            "path": "/charts",
+            "templateUrl": "app/qlikApps/CRC/charts.html",
+            "label": "Charts"
+        },
+        {
+            "path": "/accuracy",
+            "templateUrl": "app/qlikApps/CRC/accuracy.html",
+            "label": "Accuracy"
+        },
+        {
+            "path": "/categories",
+            "templateUrl": "app/qlikApps/CRC/categories.html",
+            "label": "Categories"
+        }
+    ],
+    "fields": [
+        {
+            "name": "Benefit Year",
+            "label": "Benefit Year"
+        },
+        {
+            "name": "Member ID",
+            "label": "Member ID"
+        },
+        {
+            "name": "Member Gender",
+            "label": "Member Gender"
+        },
+        {
+            "name": "Plan ID",
+            "label": "Plan ID"
+        },
+        {
+            "name": "Issuer ID",
+            "label": "Issuer ID"
+        },
+        {
+            "name": "State",
+            "label": "State"
+        },
+        {
+            "name": "In Exchange",
+            "label": "In Exchange"
+        },
+        {
+            "name": "Metal Level",
+            "label": "Metal Level"
+        },
+        {
+            "name": "Market Type",
+            "label": "Market Type"
+        },
+        {
+            "name": "Provider ID",
+            "label": "Provider ID"
+        },
+        {
+            "name": "Provider Name",
+            "label": "Provider Name"
+        },
+        {
+            "name": "Provider Specialty",
+            "label": "Provider Specialty"
+        },
+        {
+            "name": "Age Range",
+            "label": "Age Range"
+        },
+        {
+            "name": "Subpopulation",
+            "label": "Subpopulation"
+        },
+        {
+            "name": "Cost Sharing Indicator",
+            "label": "Cost Sharing Indicator"
+        },
+        {
+            "name": "Rating Area",
+            "label": "Rating Area"
+        },
+        {
+            "name": "Category",
+            "label": "Category"
+        },
+        {
+            "name": "Category Type",
+            "label": "Category Type"
+        },
+        {
+            "name": "Category Description",
+            "label": "Category Description"
+        },
+        {
+            "name": "Category Source",
+            "label": "Category Source"
+        },
+        {
+            "name": "Chart ID",
+            "label": "Chart ID"
+        }
+    ],
+    "fieldGroups": {
+        "nav": [
+            "Benefit Year",
+            "Member ID",
+            "Member Gender",
+            "Plan ID",
+            "Issuer ID",
+            "State",
+            "In Exchange",
+            "Metal Level",
+            "Market Type",
+            "Provider ID",
+            "Provider Name",
+            "Provider Specialty",
+            "Age Range",
+            "Subpopulation",
+            "Cost Sharing Indicator",
+            "Rating Area",
+            "Category",
+            "Category Type",
+            "Category Description",
+            "Category Source",
+            "Chart ID"
+        ],
+        "cycle1": [
+            "Benefit Year",
+            "Member ID",
+            "Member Gender",
+            "Plan ID",
+            "Issuer ID",
+            "State",
+            "In Exchange",
+            "Metal Level",
+            "Market Type",
+            "Provider ID",
+            "Provider Name",
+            "Provider Specialty",
+            "Age Range",
+            "Subpopulation",
+            "Cost Sharing Indicator",
+            "Rating Area",
+            "Category",
+            "Category Type",
+            "Category Description",
+            "Category Source",
+            "Chart ID"
+        ]
+    }
+}

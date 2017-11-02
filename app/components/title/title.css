@@ -1,0 +1,21 @@
+/* Containing div */
+.pa-title {
+    margin: 25px 0 25px 0;
+    padding-left: 15px;
+}
+
+/* Title text */
+.pa-title h1 {
+    display: inline;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+}
+
+/* Subtitle text */
+.pa-title h2 {
+    display: inline;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+}

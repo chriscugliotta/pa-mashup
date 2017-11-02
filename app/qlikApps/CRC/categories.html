@@ -1,0 +1,37 @@
+<div class="container">
+
+    <div class="row">
+        <pa-title data="::{
+            title: 'Categories',
+            subTitle: 'breakdown of disease categories'
+        }"></pa-title>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <pa-viz-container data="::{
+                qObjectId: 'ubdgm',
+                height: '400px',
+                title: 'Most Common',
+                subTitle: 'Size = Frequency, Color = Weight'
+            }"></pa-viz-container>
+        </div>
+        <div class="col-sm-6">
+            <pa-viz-container data="::{
+                qObjectId: 'STxaGw',
+                height: '400px',
+                title: 'Most Weighted',
+                subTitle: 'Size = Weight, Color = Frequency'
+            }"></pa-viz-container>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <pa-viz-container data="::{
+                qObjectId: 'jJMAX',
+                height: '400px',
+                title: 'Details',
+                subTitle: 'by Category',
+                cycleGroup: 'cycle1'
+            }"></pa-viz-container>
+        </div>
+</div>

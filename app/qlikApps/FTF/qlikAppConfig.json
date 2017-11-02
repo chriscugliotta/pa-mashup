@@ -1,0 +1,89 @@
+{
+    "app": "FTF demo.qvf",
+    "dependencies": [],
+    "views": [
+        {
+            "path": "/summary",
+            "templateUrl": "app/qlikApps/FTF/summary.html",
+            "label": "Summary"
+        },
+        {
+            "path": "/rca",
+            "templateUrl": "app/qlikApps/FTF/rca.html",
+            "label": "Root Cause Analysis"
+        }
+    ],
+    "fields": [
+        {
+            "name": "Benefit Year",
+            "label": "Benefit Year"
+        },
+        {
+            "name": "As Of Month",
+            "label": "As Of Month"
+        },
+        {
+            "name": "State",
+            "label": "State"
+        },
+        {
+            "name": "Market Type",
+            "label": "Market Type"
+        },
+        {
+            "name": "Issuer ID",
+            "label": "Issuer ID"
+        },
+        {
+            "name": "Plan ID",
+            "label": "Plan ID"
+        },
+        {
+            "name": "Metal Level",
+            "label": "Metal Level"
+        },
+        {
+            "name": "Rating Area",
+            "label": "Rating Area"
+        },
+        {
+            "name": "Risk Pool",
+            "label": "Risk Pool"
+        },
+        {
+            "name": "Plan Segment",
+            "label": "Plan Segment"
+        },
+        {
+            "name": "Final Snapshot",
+            "label": "Final Snapshot"
+        }
+    ],
+    "fieldGroups": {
+        "nav": [
+            "Benefit Year",
+            "As Of Month",
+            "State",
+            "Market Type",
+            "Issuer ID",
+            "Plan ID",
+            "Metal Level",
+            "Rating Area",
+            "Risk Pool",
+            "Plan Segment",
+            "Final Snapshot"
+        ],
+        "cycle1": [
+            "Benefit Year",
+            "As Of Month",
+            "State",
+            "Market Type",
+            "Issuer ID",
+            "Plan ID",
+            "Metal Level",
+            "Rating Area",
+            "Risk Pool",
+            "Plan Segment"
+        ]
+    }
+}

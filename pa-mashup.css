@@ -1,0 +1,114 @@
+/* Import fonts */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+/* Page background */
+body {
+    background: rgb(233, 236, 243);
+}
+
+/* Metronic typography */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif !important;
+    color: rgb(51, 51, 51);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 12px;
+}
+body {
+    font-size: 14px !important;
+}
+li {
+    list-style-type: none;
+}
+
+
+
+
+
+/* Prevents text selection */
+.noselect {
+    color: red;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/* Clear fix */
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* Bootstrap scrollable dropdown menu */
+.scrollable-menu {
+    height: auto;
+    max-height: 250px;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* Override Qlik font
+.qv-object * {
+    font-family: 'Open Sans';
+} */
+
+/* Straight table font */
+.qv-st-header-cell {
+    font-size: 12px;
+}
+.qv-st-total-cell.qv-st-header-cell {
+    font-size: 10px;
+}
+.qv-object .qv-object-content-container table tbody tr td {
+    font-size: 10px;
+}
+
+/* KPI object label
+.qv-object .kpi-data .measure-title span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(102, 102, 102);
+} */
+
+/* KPI object value
+.qv-object .kpi-data .kpi-value span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+} */
+
+
+
+
+
+/* Resolves incompatibility between Qlik and SimpleLineIcons */
+[class^="sli icon-"]:before {
+    font-family: 'simple-line-icons';
+}
