@@ -20,7 +20,11 @@ This code serves as a flexible/configurable outer shell, which can house any Qli
 
 You can see examples of these components below:
 
-<img src="https://i.imgur.com/SUzKrKW.png"></img>
+<img src="https://i.imgur.com/SUzKrKW.png" height=50% width=50%></img>
+
+<img src="https://i.imgur.com/MeVyKES.png" height=50% width=50%></img>
+
+<img src="https://i.imgur.com/4b2ePaq.png" height=50% width=50%></img>
 
 # How to Run
 
