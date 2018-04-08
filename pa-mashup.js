@@ -54,7 +54,7 @@ require([
         
         // Load JSON files
         var promises = [
-            promiseJSON('app/qlikApps/CRC/qlikAppConfig.json')
+            promiseJSON('app/qlikApps/ExecutiveDashboard/qlikAppConfig.json')
         ];
         
         // Wait until all JSON files are loaded

@@ -98,6 +98,17 @@
             // Embed Qlik object in <div>.  Then, store reference to Qlik object.
             paQlikService.embedObject(self.$vizObject, self.qObjectId).then(qObject => {
                 self.qObject = qObject;
+
+                //
+                // EXPERIMENTAL - Remove titles
+                //
+                var patches = [ {
+                    'qOp': 'replace',
+                    'qPath': '/showTitles',
+                    'qValue': 'false'
+                } ];
+                self.qObject.applyPatches(patches, true);
+
             });
             
             // Initialize height.  We're waiting 1 tick, because we want this to happen AFTER

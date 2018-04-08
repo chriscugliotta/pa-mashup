@@ -1,0 +1,54 @@
+{
+    "app": "Executive Dashboard.qvf",
+    "dependencies": [],
+    "views": [
+        {
+            "path": "/kpiDashboard",
+            "templateUrl": "app/qlikApps/ExecutiveDashboard/kpiDashboard.html",
+            "label": "KPI Dashboard"
+        },
+        {
+            "path": "/salesAnalysis",
+            "templateUrl": "app/qlikApps/ExecutiveDashboard/salesAnalysis.html",
+            "label": "Sales Analysis"
+        }
+    ],
+    "fields": [
+        {
+            "name": "Account",
+            "label": "Account"
+        },
+        {
+            "name": "Account Group",
+            "label": "Account Group"
+        },
+        {
+            "name": "Customer",
+            "label": "Customer"
+        },
+        {
+            "name": "Product",
+            "label": "Product"
+        },
+        {
+            "name": "Product Group",
+            "label": "Product Group"
+        }
+    ],
+    "fieldGroups": {
+        "nav": [
+            "Account",
+            "Account Group",
+            "Customer",
+            "Product",
+            "Product Group"
+        ],
+        "cycle1": [
+            "Account",
+            "Account Group",
+            "Customer",
+            "Product",
+            "Product Group"
+        ]
+    }
+}
