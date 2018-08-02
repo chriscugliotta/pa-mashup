@@ -99,15 +99,13 @@
             paQlikService.embedObject(self.$vizObject, self.qObjectId).then(qObject => {
                 self.qObject = qObject;
 
-                //
-                // EXPERIMENTAL - Remove titles
-                //
+                // Always disable Qlik titles (because we use our own titles)
                 var patches = [ {
                     'qOp': 'replace',
                     'qPath': '/showTitles',
                     'qValue': 'false'
                 } ];
-                self.qObject.applyPatches(patches, true);
+                self.qObject.applyPatches(patches, true)
 
             });
             

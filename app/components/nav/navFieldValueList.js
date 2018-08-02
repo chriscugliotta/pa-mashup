@@ -77,8 +77,13 @@
                     root.qlbViz = qViz;
                     root.qlbViz.show(self.$listBox);
                     paQlikService.app.getObject(qViz.id).then(qObject => {
-                        root.qlbObject = qObject;
-                        root.qlbElement = self.$listBox.find('.qv-object-wrapper');
+
+                        // For some reason, qv-object-wrapper doesn't exist immediately...
+                        setTimeout(() => {
+                            root.qlbObject = qObject;
+                            root.qlbElement = self.$listBox.find('.qv-object-wrapper');
+                        }, 500)
+
                     });
                 });
             }
